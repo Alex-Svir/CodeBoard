@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ImeButton" parent="@style/Theme.RemKey">
+    <!--style name="ImeButton" parent="@style/Widget.MaterialComponents.Button"-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="minWidth">30dp</item>
+        <item name="minHeight">48dp</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    <style name="ImeButton.Letter">
+        <item name="android:onClick">onLetterClick</item>
+    </style>
+    <style name="ImeButton.Symbol">
+        <item name="android:onClick">onSymbolClick</item>
+    </style>
+    <style name="ImeButton.Command">
+        <item name="android:onClick">onCommandClick</item>
+    </style>
+    <style name="ImeButton.Spacer">
+        <item name="android:onClick">onSpacerClick</item>
+    </style>
+    <style name="ImeButton.Shift">
+        <item name="android:onClick">onShiftClick</item>
+    </style>
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RemKey</string>
+    <string name="command_up">"-=up=-"</string>
+    <string name="command_down">"-=down=-"</string>
+    <string name="command_left">"-=left=-"</string>
+    <string name="command_right">"-=right=-"</string>
+    <string name="command_backspace">"-=bs=-"</string>
+    <string name="bt_button_content_description">button</string>
+</resources>

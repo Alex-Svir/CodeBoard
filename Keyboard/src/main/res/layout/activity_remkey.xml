@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/stat_sys_data_bluetooth"
+        android:background="@drawable/bluetooth_button"
+        android:onClick="btClick"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:layout_marginTop="@dimen/margin_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/bt_button_content_description"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_horizontal"
+        android:layout_marginRight="@dimen/margin_horizontal"
+        app:layout_constraintTop_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="spinner,button"/>
+
+    <LinearLayout
+        android:id="@+id/keyboard"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginStart="@dimen/margin_keyboard_horizontal"
+        android:layout_marginLeft="@dimen/margin_keyboard_horizontal"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:layout_marginEnd="@dimen/margin_keyboard_horizontal"
+        android:layout_marginRight="@dimen/margin_keyboard_horizontal"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
