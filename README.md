@@ -1,12 +1,13 @@
-# CodeBoard
-## Let every pixel work
+# CodeBoard #
+## Let every pixel work ##
 
-### [Keyboard](/Keyboard/src)
+### [Keyboard](/Keyboard/src) ###
 Provides a virtual keybord on a remote device via bluetooth.
-![](/Keyboard/keyboard_land.png "")
+![Landscape](/Keyboard/keyboard_land.png "Landscape")
 ---
-![](/Keyboard/keyboard_port.png "")
+![Portrait](/Keyboard/keyboard_port.png "Portrait")
+---
 
-### [IME](/IME/src)
+### [IME](/IME/src) ###
 Implements an Input Method Editor service.
 Appears in `Change keyboard` menu as `RemKeyIME`
